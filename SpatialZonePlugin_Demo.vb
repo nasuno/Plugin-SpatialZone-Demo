@@ -8,8 +8,6 @@ Public Class PluginSpatialZoneDemo
     Private zonePool As New Dictionary(Of String, ISpatialZone)()
 
     Public Sub Execute(api As ICurrentApi) Implements IPlugin.Execute
-        Dim objectId As Integer = api.AddMyObjectToFactory(1, 2, 3, 42)
-        Console.WriteLine("Created object with id: " & objectId)
 
         '===================
         ' DEMO:  Margin sets + spatial zone slot (Primary/Secondary) usage
@@ -229,4 +227,5 @@ End Class
 '
 ' This design intentionally does not prevent post-disposal usage, in order to
 ' encourage creativity and experimentation in plugins. Use this power with care.
+
 ' ==============================
