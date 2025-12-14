@@ -19,13 +19,13 @@ api.CreateMargin("Compact_LeftColumn", MarginType.ColumnMargin, PanelType. TopPa
 **Bundle margins into a named set**<br>
 ```vb
 api.CreateMarginSet(setName As String, topRowMarginId As String, bottomRowMarginId As String,
-                    leftColumnMarginId As String, rightColumnMarginId As String)
+                                   leftColumnMarginId As String, rightColumnMarginId As String)
 ```
 
 **Example**<br>
 ```vb
 api.CreateMarginSet("CompactLayout", "Compact_TopRow", "Compact_BottomRow", 
-                    "Compact_LeftColumn", "Compact_RightColumn")
+                                 "Compact_LeftColumn", "Compact_RightColumn")
 ```
 
 **List all margin set names**<br>
