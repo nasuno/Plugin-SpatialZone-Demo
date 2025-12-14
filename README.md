@@ -5,7 +5,7 @@
 **Create individual margins**<br>
 ```vb
 api.CreateMargin(marginId As String, marginType As MarginType, panel As PanelType, 
-                 row As Integer?, column As Integer?, locked As Boolean)
+                                              row As Integer?, column As Integer?, locked As Boolean)
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;`RowMargin`: supply `row`, set `column` to `Nothing`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;`ColumnMargin`: supply `column`, set `row` to `Nothing`
