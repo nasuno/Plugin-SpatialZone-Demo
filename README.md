@@ -197,7 +197,7 @@ api.SwapZoneMarginSets("zone2")
 ```
 
 Result:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zone 1: now active = "SpacedLayout" (via Secondary Slot)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zone 1: now active = "SpacedLayout" (via Secondary Slot)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zone 2: now active = "CompactLayout" (via Secondary Slot)
 
 Visually, the contents appear to have swapped zones. This works because the same set names are shared across zones, and each zone's slots are configured in opposite roles.
@@ -267,7 +267,7 @@ After calling `api.RemoveSpatialZone(zoneId)`:<br>
 **"Zombie" zone behavior**
 
 These removed-but-referenced zones can still be used:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Methods like `UpdateMargins`, `Text` assignment may still create or modify shared host state<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Methods like `UpdateMargins`, `Text` assignment may still create or modify shared host state<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The host and other plugins will no longer be aware of or manage the zone<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any further actions are entirely the responsibility of your plugin<br>
 
