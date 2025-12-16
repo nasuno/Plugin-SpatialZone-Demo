@@ -279,7 +279,7 @@ This design intentionally does not prevent post-disposal usage to encourage crea
 
 ---
 
-&nbsp;&nbsp;Enums
+&nbsp;&nbsp;API Enums
 
 ```vb
 Public Enum MarginType
@@ -307,3 +307,11 @@ Dim topRow    As Integer = api.GetPanelFurthestTopRow(PanelType.TopPanel)
 Dim rightCol  As Integer = api.GetPanelFurthestRightColumn(PanelType.TopPanel)
 Dim bottomRow As Integer = api.GetPanelFurthestBottomRow(PanelType.TopPanel)
 ```
+
+---
+
+https://github.com/nasuno/Holodeck<br>
+https://github.com/nasuno/Holodeck_API<br>
+https://github.com/nasuno/Plugin-Satellite-Cubes<br>
+https://github.com/nasuno/Plugin-Events<br>
+https://github.com/nasuno/Plugin-Menu-System
