@@ -21,8 +21,8 @@ api.CreateMargin(marginId As String, marginType As MarginType, panel As PanelTyp
 
 **Example**<br>
 ```vb
-api.CreateMargin("Compact_TopRow", MarginType.RowMargin, PanelType. TopPanel, 10, Nothing, False)
-api.CreateMargin("Compact_LeftColumn", MarginType.ColumnMargin, PanelType. TopPanel, Nothing, 5, False)
+api.CreateMargin("Compact_TopRow", MarginType.RowMargin, PanelType.TopPanel, 10, Nothing, False)
+api.CreateMargin("Compact_LeftColumn", MarginType.ColumnMargin, PanelType.TopPanel, Nothing, 5, False)
 ```
 
 **Bundle margins into a named set**<br>
@@ -87,7 +87,7 @@ Dim zone As ISpatialZone = api.GetSpatialZone(zoneId As String)
 
 **List all zones**<br>
 ```vb
-For Each zone As ISpatialZone In api. GetAllSpatialZones()
+For Each zone As ISpatialZone In api.GetAllSpatialZones()
     Console.WriteLine(zone.ID)
 Next
 ```
@@ -121,7 +121,7 @@ api.RemoveSpatialZone(zoneId As String)
 
 **Usage**<br>
 ```vb
-Dim zone As ISpatialZone = api. CreateSpatialZone("MyZone")
+Dim zone As ISpatialZone = api.CreateSpatialZone("MyZone")
 zone.Text = "Hello World"
 
 Dim aabb = zone.BoundingBoxAABB
@@ -129,7 +129,7 @@ Dim minCorner = aabb.Item1  ' (minX, minY, minZ)
 Dim maxCorner = aabb.Item2  ' (maxX, maxY, maxZ)
 
 For Each kvp In zone.WrappedCharIndex
-    Dim row As Integer = kvp.Key. Item1
+    Dim row As Integer = kvp.Key.Item1
     Dim col As Integer = kvp.Key.Item2
     Dim ch As Char = kvp.Value
 Next
