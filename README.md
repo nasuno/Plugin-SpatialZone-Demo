@@ -40,7 +40,7 @@ api.CreateMarginSet("CompactLayout", "Compact_TopRow", "Compact_BottomRow",
 **List all margin set names**<br>
 ```vb
 Dim names As List(Of String) = api.GetAllMarginSetNames()
-Console.WriteLine("Available margin sets: " & String. Join(", ", names))
+Console.WriteLine("Available margin sets: " & String.Join(", ", names))
 ```
 
 **Retrieve a margin set's contents**<br>
