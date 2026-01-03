@@ -83,10 +83,6 @@ Public Class PluginSpatialZoneDemo
         '   - SwitchZoneToMarginSetB(zoneId)         ' Activate Secondary Slot
         '   - SwapZoneMarginSets(zoneId)             ' Toggle between slots
         '
-        ' Think of it like two drawers (Primary and Secondary) that can each hold
-        ' one margin set. You decide what goes in each drawer, and you can switch
-        ' which drawer is "open" (active) at any time.
-        '
         ' Suggested naming patterns if you wrap these in your own plugin helpers: 
         '
         ' | Wrapper Name                  | Underlying API              | Good for...                  |
@@ -229,3 +225,4 @@ End Class
 ' encourage creativity and experimentation in plugins. Use this power with care.
 
 ' ==============================
+
